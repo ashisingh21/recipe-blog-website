@@ -121,7 +121,7 @@ nav ul li a:hover {
 
 
 .hero-content {
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 80px 15%;
@@ -451,17 +451,18 @@ h3 {
     /* Hero Section */
 
     .hero-section {
-        width: auto;
+        background-image: url(images/background-header.png);
         height: 140vh;
 
-        background-position: top left;
-        background-size: auto;
+        background-size: contain;
         background-repeat: repeat;
-        background-image: url(images/background-header.png);
+        width: 100%;
     }
 
     .hero-section-bg {
         display: none;
+        margin: 0;
+        padding: 0;
     }
 
     .hero-content {
@@ -469,16 +470,23 @@ h3 {
         flex-direction: column;
         padding: 0;
         margin: 0;
+        position: relative;
     }
 
     .header-image {
         display: inline-block;
         height: 400px;
         width: auto;
+        margin-right: 60px;
+
 
     }
 
     .col-2,
+    .col-1 {
+        margin: 0;
+    }
+
     .col-1 {
         margin: 0;
     }
@@ -494,7 +502,7 @@ h3 {
     }
 
     .col-2 p {
-        margin: 0 30px 0 0;
+        margin-right: 50px;
     }
 
     /* Blog Section */
@@ -550,7 +558,7 @@ h3 {
     .recipe-section-blocks {
         display: flex;
         flex-direction: column;
-        text-align: center;
+
 
     }
 
@@ -581,7 +589,7 @@ h3 {
         right: 30px;
         border-radius: 10px;
         color: white;
-        text-align: center;
+
     }
 
     .start-cooking-box h2 {
